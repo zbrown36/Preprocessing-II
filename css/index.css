@@ -1,3 +1,4 @@
+@mobile screen only and(max-width: 500px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +169,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 65%;
+}
+.nav_bar {
+  width: 100%;
+  Padding: 20px 10px;
+  margin: 0 auto;
+  border-bottom: 2px dotted black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.nav_bar a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0 10px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -184,10 +206,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-top: 2px dotted black;
 }
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+  padding-top: 20px;
 }
 .home .content-section .img-content {
   width: 48%;
@@ -195,6 +219,7 @@ img {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+  padding-top: 20px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -224,4 +249,18 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  border: 1px solid black;
+  background: #17A2B8;
+  width: 150px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 15%;
+  -moz-outline-radius: 15%;
 }

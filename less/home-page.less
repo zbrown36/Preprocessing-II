@@ -5,12 +5,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-top: 2px dotted black;
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      padding-top: 20px;
     }
 
     .img-content {
@@ -19,6 +21,7 @@
 
       img {
         border-radius: 10px;
+        padding-top: 20px;
       }
     }
   }
@@ -52,10 +55,31 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        display: flex;
+        border: 1px solid black;
+        background: @eastern-blue;
+        width: 150px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 0;
+        font-size: 20px;
+        text-align: center;
+        .border_radius(15%);
+      }
     }
   }
 }// home
+@media @mobile {
+  #yes{
+  flex-direction: column;
+  justify-content: space-evenly;
+  }
+}
